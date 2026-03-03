@@ -16,7 +16,7 @@ spec:
       containers:
         - name: backend
           # REPLACE WITH YOUR ACTUAL USERNAME
-          image: ghcr.io/hezkiawan/kouvenci-backend:sha-97c54291434ce7aa17b2a409e7e4ed8ac93c244f
+          image: ghcr.io/hezkiawan/kouvenci-backend:sha-2d124d60f217c52058e538ee802a7914eaa06aa4
           ports:
             - containerPort: 8080
           env:
