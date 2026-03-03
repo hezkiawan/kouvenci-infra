@@ -54,7 +54,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          # REPLACE WITH YOUR ACTUAL USERNAME
           image: ghcr.io/hezkiawan/kouvenci-frontend:latest
           ports:
             - containerPort: 3000
