@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kouvenci-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    # REPLACE WITH YOUR ACTUAL USERNAME
+    repoURL: https://github.com/YOUR_GITHUB_USERNAME/kouvenci-infra.git
+    targetRevision: main
+    path: .
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
