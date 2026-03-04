@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/hezkiawan/kouvenci-frontend:sha-5e3436fcf955e3904fd6651d1d7859beac20446c
+          image: ghcr.io/hezkiawan/kouvenci-frontend:sha-074a0a2b1839d6aa9e465e1c924f2ef833bb8ece
           ports:
             - containerPort: 3000
 ---
